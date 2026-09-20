@@ -1,0 +1,76 @@
+[0m16:02:02.059984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243D6FAA7E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243D8571010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243DAA2C9B0>]}
+
+
+============================== 16:02:02.069530 | a3456181-5c09-47c8-a0ed-b2a5fcfae1d4 ==============================
+[0m16:02:02.069530 [info ] [MainThread]: Running with dbt=1.12.3
+[0m16:02:02.070472 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\LENOVO\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init toy-store-dbt', 'log_path': 'logs'}
+[0m16:04:23.451027 [debug] [MainThread]: Starter project path: C:\Users\LENOVO\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\include\starter_project
+[0m16:04:23.514656 [info ] [MainThread]: Setting up your profile.
+[0m16:06:27.986037 [info ] [MainThread]: Profile toy_store_dbt written to C:\Users\LENOVO\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m16:06:27.991018 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m16:06:27.993996 [info ] [MainThread]: dbt version: 1.12.3
+[0m16:06:27.994997 [info ] [MainThread]: python version: 3.12.7
+[0m16:06:27.995995 [info ] [MainThread]: python path: C:\Users\LENOVO\AppData\Local\Programs\Python\Python312\python.exe
+[0m16:06:27.997010 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m16:06:28.106251 [info ] [MainThread]: Using profiles dir at C:\Users\LENOVO\.dbt
+[0m16:06:28.107252 [info ] [MainThread]: Using profiles.yml file at C:\Users\LENOVO\.dbt\profiles.yml
+[0m16:06:28.108253 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\LENOVO\Documents\VS\toy-store-analytics\toy_store_dbt\dbt_project.yml
+[0m16:06:28.109252 [info ] [MainThread]: adapter type: postgres
+[0m16:06:28.110751 [info ] [MainThread]: adapter version: 1.11.0
+[0m16:06:28.309568 [info ] [MainThread]: Configuration:
+[0m16:06:28.311710 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:06:28.313345 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:06:28.315369 [info ] [MainThread]: Required dependencies:
+[0m16:06:28.316376 [debug] [MainThread]: Executing "git --help"
+[0m16:06:28.372530 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:06:28.374087 [debug] [MainThread]: STDERR: "b''"
+[0m16:06:28.374087 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:06:28.375198 [info ] [MainThread]: Connection:
+[0m16:06:28.376317 [info ] [MainThread]:   host: localhost
+[0m16:06:28.377330 [info ] [MainThread]:   port: 5432
+[0m16:06:28.377330 [info ] [MainThread]:   user: store_user
+[0m16:06:28.378335 [info ] [MainThread]:   database: toy_store
+[0m16:06:28.379336 [info ] [MainThread]:   schema: raw
+[0m16:06:28.380331 [info ] [MainThread]:   connect_timeout: 10
+[0m16:06:28.381335 [info ] [MainThread]:   role: None
+[0m16:06:28.382332 [info ] [MainThread]:   search_path: None
+[0m16:06:28.383336 [info ] [MainThread]:   keepalives_idle: 0
+[0m16:06:28.408330 [info ] [MainThread]:   sslmode: None
+[0m16:06:28.418489 [info ] [MainThread]:   sslcert: None
+[0m16:06:28.420484 [info ] [MainThread]:   sslkey: None
+[0m16:06:28.421486 [info ] [MainThread]:   sslrootcert: None
+[0m16:06:28.422488 [info ] [MainThread]:   application_name: dbt
+[0m16:06:28.423492 [info ] [MainThread]:   autocommit: False
+[0m16:06:28.423492 [info ] [MainThread]:   retries: 1
+[0m16:06:28.424487 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m16:06:28.919874 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m16:06:32.997687 [debug] [MainThread]: Using postgres connection "debug"
+[0m16:06:32.998687 [debug] [MainThread]: On debug: select 1 as id
+[0m16:06:32.998687 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:06:33.253438 [debug] [MainThread]: SQL status: SELECT 1 in 0.255 seconds
+[0m16:06:33.255449 [debug] [MainThread]: On debug: Close
+[0m16:06:33.255449 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:06:33.256439 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:06:33.257440 [info ] [MainThread]: Your new dbt project "toy_store_dbt" was created!
+Initialized new project in C:\Users\LENOVO\Documents\VS\toy-store-analytics\toy_store_dbt\toy_store_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:06:33.258440 [debug] [MainThread]: Command `dbt init` succeeded at 16:06:33.258440 after 271.59 seconds
+[0m16:06:33.259446 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:06:33.259446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243DAB80740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243DC84EC00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243D73A3B30>]}
+[0m16:06:33.260441 [debug] [MainThread]: Flushing usage events
+[0m16:06:34.746661 [debug] [MainThread]: An error was encountered while trying to flush usage events

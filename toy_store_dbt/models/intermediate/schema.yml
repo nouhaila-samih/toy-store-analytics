@@ -1,0 +1,17 @@
+version: 2
+
+models:
+
+  - name: int_order_items
+    columns:
+      - name: order_item_id
+        tests:
+          - not_null
+          - unique
+
+  - name: int_website_pageviews
+    columns: 
+      - name: website_pageview_id
+        tests:
+          - not_null
+          - unique
