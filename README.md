@@ -126,7 +126,8 @@ The resulting data model can be used to analyze:
 
 The `marts` models power the Power BI dashboard for key business metrics.
 
-![Power BI Dashboard Screenshot](C:\Users\LENOVO\Documents\VS\toy-store-analytics\screenshots\POWERBI SALES.png)
+![Power BI Dashboard Screenshot](screenshots/POWERBI%20SALES.png)
+
 
 ## Project Goal
 
