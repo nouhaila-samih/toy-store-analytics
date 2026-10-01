@@ -1,15 +1,15 @@
 # Toy Store Analytics
 
-Projet d'**Analytics Engineering** basé sur des données e-commerce.
-L'objectif est de transformer des données brutes en un **data warehouse analytique fiable, testé et structuré avec dbt**.
+An **Analytics Engineering** project based on e-commerce data.
+The goal is to transform raw data into a **reliable, tested, and structured analytical data warehouse using dbt**.
 
 ## Objectives
 
-* Transformer et nettoyer les données sources.
-* Structurer les données selon une architecture analytique claire.
-* Construire un **Star Schema** avec des dimensions et des tables de faits.
-* Mettre en place des tests de qualité des données.
-* Préparer les données pour l'analyse et la visualisation.
+* Transform and clean raw source data.
+* Structure data using a clear analytical architecture.
+* Build a **Star Schema** with dimensions and fact tables.
+* Implement data quality tests.
+* Prepare data for analysis and visualization.
 
 ## Architecture
 
@@ -23,38 +23,38 @@ INTERMEDIATE
 MARTS
 ```
 
-* **Staging** → nettoyage, typage et standardisation.
-* **Intermediate** → logique métier et enrichissement.
-* **Marts** → modèles analytiques finaux.
+* **Staging** → cleaning, data type casting, and standardization.
+* **Intermediate** → business logic and data enrichment.
+* **Marts** → final analytical models.
 
 ## Data Model
 
-Le projet utilise une approche **Star Schema**.
+The project follows a **Star Schema** approach.
 
 ### Dimensions
 
-* `dim_product` — informations sur les produits.
-* `dim_date` — dimension calendrier.
+* `dim_product` — product information.
+* `dim_date` — calendar dimension.
 
 ### Facts
 
-* `fct_orders` — niveau commande.
-* `fct_order_items` — niveau article commandé.
-* `fct_product_sales` — ventes agrégées par produit et par jour.
-* `fct_website_pageviews` — événements de navigation.
+* `fct_orders` — order-level data.
+* `fct_order_items` — order item-level data.
+* `fct_product_sales` — daily aggregated sales by product.
+* `fct_website_pageviews` — website pageview events.
 
-Les modèles utilisent des **surrogate keys** afin de gérer les relations entre les différentes tables de manière cohérente.
+The models use **surrogate keys** to maintain consistent relationships between tables.
 
 ## Data Quality
 
-La qualité des données est contrôlée avec des tests dbt :
+Data quality is monitored using dbt tests:
 
 * `not_null`
 * `unique`
 * `relationships`
-* tests personnalisés sur les valeurs
+* Custom value validation tests
 
-Les modèles et colonnes importants sont également documentés dans les fichiers `schema.yml`.
+Important models and columns are also documented in `schema.yml` files.
 
 ## Technologies
 
@@ -64,6 +64,7 @@ Les modèles et colonnes importants sont également documentés dans les fichier
 * **PostgreSQL**
 * **Jinja**
 * **dbt-utils**
+* **Power BI**
 
 ## Project Structure
 
@@ -115,11 +116,18 @@ The resulting data model can be used to analyze:
 
 * Sales and orders
 * Product performance
-* Revenue and costs
+* Profit 
 * Refunds
+* Users
 * Website activity
 * Trends over time
 
+## Power BI Dashboard
+
+The `marts` models power the Power BI dashboard for key business metrics.
+
+![Power BI Dashboard Screenshot](C:\Users\LENOVO\Documents\VS\toy-store-analytics\screenshots\POWERBI SALES.png)
+
 ## Project Goal
 
-This project demonstrates practical skills in **SQL, dbt, data transformation, dimensional modeling, data quality and Analytics Engineering**.
+This project demonstrates practical skills in **SQL, dbt, data transformation, dimensional modeling, data quality, Analytics Engineering and Data Visualization**.
