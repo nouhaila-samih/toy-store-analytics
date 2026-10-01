@@ -1,3 +1,13 @@
 
 logs/
 .env
+
+*.db
+
+
+
+logs/
+*.log
+
+
+.env
